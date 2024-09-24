@@ -57,6 +57,7 @@ public class Payment {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         Payment payment = (Payment) o;
         return Objects.equals(id, payment.id);
     }
@@ -64,14 +65,5 @@ public class Payment {
     @Override
     public int hashCode() {
         return Objects.hashCode(id);
-    }
-
-    @Override
-    public String toString() {
-        return "Payment{" +
-                "id=" + id +
-                ", moment=" + moment +
-                ", order=" + order +
-                '}';
     }
 }
